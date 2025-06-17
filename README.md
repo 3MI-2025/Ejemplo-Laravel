@@ -12,7 +12,7 @@ Estos son los pasos de código dados para crear este proyecto desde cero (para t
 * [Paso 5: Agregar baja lógica de bebidas](tutorial/paso5.md)
 * [Paso 6: Agregar edición de bebidas](tutorial/paso6.md)
 
-Se puede leer mejor en la sección de [Wiki del repositorio](https://github.com/3MJ-2025/Ejemplo-Laravel/wiki)
+Se puede leer mejor en la sección de [Wiki del repositorio](https://github.com/3MI-2025/Ejemplo-Laravel/wiki)
 
 ## Probar el proyecto (Clonado desde Github)
 Para probar este proyecto, se debe clonar el repositorio de Git. Luego, se debe copiar el archivo `.env.example` en un archivo `.env` (recuerde que este archivo nunca se sube a Github, está ingorado).
