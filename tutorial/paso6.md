@@ -9,7 +9,7 @@ En este paso vamos a:
 
 
 En la vista `resources/views/index.blade.php`, debajo de la lista de Bebidas, agregamos un enlace para ver editar una Bebida, dentro del `foreach`:
-```php
+```html
 @foreach ($bebidas as $bebida)
     <div>
         {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <a href="/eliminar/{{ $bebida->id }}">Eliminar</a> <a href="/editar/{{ $bebida->id }}">Editar</a><br>
@@ -36,7 +36,7 @@ public function BuscarParaEditar(Request $request, $id){
 
 Ahora, creamos una nueva vista para editar la Bebida, en `resources/views/editar.blade.php`, con el siguiente contenido:
 
-```php
+```html
 <body>
     <h1>Editar {{ $bebida -> id }}</h1>  
     <a href="/">Volver</a> <br><br>
@@ -51,8 +51,6 @@ Ahora, creamos una nueva vista para editar la Bebida, en `resources/views/editar
         Marca <input type="text" name="marca" value="{{ $bebida->marca }}"> <br>
         <input type="submit" value="Editar Bebida"><br><br>
     </form>
-
-
 </body>
 ```
 

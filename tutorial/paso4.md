@@ -9,7 +9,7 @@ En este paso vamos a:
 <hr>
 
 En la vista `resources/views/index.blade.php`, en la lista de Bebidas, agregamos un enlace para ver los detalles de cada Bebida, dentro del `foreach`:
-```php
+```html
 @foreach ($bebidas as $bebida)
     <div>
         {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <br>
@@ -18,8 +18,7 @@ En la vista `resources/views/index.blade.php`, en la lista de Bebidas, agregamos
  ```
 Luego, creamos la vista `resources/views/detalle.blade.php` para mostrar los detalles de una Bebida, con el siguiente contenido:
 
-```php
-
+```html
 <body>
     <h1>Bebida {{ $bebida -> id }}</h1>  
     <a href="/">Volver</a><br><br>

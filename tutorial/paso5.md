@@ -15,7 +15,7 @@ La baja lógica funciona asignando la fecha de creación en la columna `deleted_
 <hr>
 
 En la vista `resources/views/index.blade.php`, debajo de la lista de Bebidas, agregamos un enlace para ver eliminar una Bebida, dentro del `foreach`:
-```php
+```html
 @foreach ($bebidas as $bebida)
     <div>
         {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <a href="/eliminar/{{ $bebida->id }}">Eliminar</a><br>
@@ -25,8 +25,7 @@ En la vista `resources/views/index.blade.php`, debajo de la lista de Bebidas, ag
 
 Tambien, debajo del formulario, agregamos un mensaje de éxito si se ha eliminado una bebida correctamente:
 
-```php
-
+```html
 @if (session("bebidaEliminada"))
     <strong>Bebida eliminada correctamente</strong>
 @endif

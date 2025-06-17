@@ -29,8 +29,7 @@ class BebidaController extends Controller
 
 Luego, creamos la vista `resources/views/index.blade.php` (las vistas se crean manualmente, no por comandos), y dentro de su contenido, le damos el codigo necesario de HTML para que se muestre correctamente en el navegador, ademas de una sentencia `foreach` con sintaxis de Blade para mostrar todas las instancias del Modelo `Bebidas` que el controlador le pasa a la vista:
 
-```php
-
+```html
 <body>
     <h1>Bebidas</h1>
 
@@ -40,7 +39,6 @@ Luego, creamos la vista `resources/views/index.blade.php` (las vistas se crean m
         </div>
     @endforeach
 </body>
-
 ```
 
 Por ultimo, enrutamos los requests del usuario para que invoquen la ejecución de la funcion del controlador.
