@@ -13,5 +13,15 @@ class BebidaController extends Controller
         return view("index", ["bebidas" => $bebidas]);
     }
 
+    public function Insertar(Request $request){
+        $bebida = new Bebida();
+        $bebida->nombre = $request->post("nombre");
+        $bebida->capacidad = $request->post("capacidad");
+        $bebida->stock = $request->post("stock");
+        $bebida->tipo = $request->post("tipo");
+        $bebida->marca = $request->post("marca");
+        $bebida->save();
+        return redirect("/")->with("bebidaAgregada", true);
+    }
    
 }
