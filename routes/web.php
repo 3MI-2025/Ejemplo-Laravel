@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BebidaController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[BebidaController::class, "Index"] );

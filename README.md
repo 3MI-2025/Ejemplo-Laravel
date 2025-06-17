@@ -37,5 +37,6 @@ Ahora si, iniciamos el proyecto de Laravel con `php artisan serve`
 Estos son los pasos de código dados para crear este proyecto desde cero (para tener una referencia de cada operacion)
 
 * [Paso 1: Crear Modelo y Migraciones](tutorial/paso1.md)
+* [Paso 2: Crear controlador de Bebidas, y una vista para listar todas las bebidas] (tutorial/paso2.md)
 
 
