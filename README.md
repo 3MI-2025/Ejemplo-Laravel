@@ -2,7 +2,19 @@
 
 Este repositorio tiene un ejemplo básico de Laravel, realizando un CRUD de Bebidas.
 
-### Probar el proyecto (Clonado desde Github)
+## Paso a paso para crear el proyecto
+Estos son los pasos de código dados para crear este proyecto desde cero (para tener una referencia de cada operacion)
+
+* [Paso 1: Crear Modelo y Migraciones](tutorial/paso1.md)
+* [Paso 2: Crear controlador de Bebidas, y una vista para listar todas las bebidas](tutorial/paso2.md)
+* [Paso 3: Agregar alta de bebidas, en vista y controlador](tutorial/paso3.md)
+* [Paso 4: Agregar vista de detalles de bebida](tutorial/paso4.md)
+* [Paso 5: Agregar baja lógica de bebidas](tutorial/paso5.md)
+* [Paso 6: Agregar edición de bebidas](tutorial/paso6.md)
+
+Se puede leer mejor en la sección de [Wiki del repositorio](https://github.com/3MJ-2025/Ejemplo-Laravel/wiki)
+
+## Probar el proyecto (Clonado desde Github)
 Para probar este proyecto, se debe clonar el repositorio de Git. Luego, se debe copiar el archivo `.env.example` en un archivo `.env` (recuerde que este archivo nunca se sube a Github, está ingorado).
 
 Una vez copiado, configurar el bloque de configuración de base de Datos en el archivo `.env` con este contenido:
@@ -33,12 +45,3 @@ Ahora si, iniciamos el proyecto de Laravel con `php artisan serve`
 
 <hr>
 
-# Paso a paso para crear el proyecto
-Estos son los pasos de código dados para crear este proyecto desde cero (para tener una referencia de cada operacion)
-
-* [Paso 1: Crear Modelo y Migraciones](tutorial/paso1.md)
-* [Paso 2: Crear controlador de Bebidas, y una vista para listar todas las bebidas](tutorial/paso2.md)
-* [Paso 3: Agregar alta de bebidas, en vista y controlador](tutorial/paso3.md)
-* [Paso 4: Agregar vista de detalles de bebida](tutorial/paso4.md)
-* [Paso 5: Agregar baja lógica de bebidas](tutorial/paso5.md)
-* [Paso 6: Agregar edición de bebidas](tutorial/paso6.md)
