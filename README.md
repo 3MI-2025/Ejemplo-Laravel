@@ -41,4 +41,4 @@ Estos son los pasos de código dados para crear este proyecto desde cero (para t
 * [Paso 3: Agregar alta de bebidas, en vista y controlador](tutorial/paso3.md)
 * [Paso 4: Agregar vista de detalles de bebida](tutorial/paso4.md)
 * [Paso 5: Agregar baja lógica de bebidas](tutorial/paso5.md)
-
+* [Paso 6: Agregar edición de bebidas](tutorial/paso6.md)

@@ -34,4 +34,20 @@ class BebidaController extends Controller
         $bebida->delete();
         return redirect("/")->with("bebidaEliminada", true);
     }
+
+    public function BuscarParaEditar(Request $request, $id){
+        $bebida = Bebida::findOrFail($id);
+        return view("editar", ["bebida" => $bebida]);
+    }
+
+    public function Editar(Request $request){
+        $bebida = Bebida::findOrFail($request->id);
+        $bebida->nombre = $request->nombre;
+        $bebida->capacidad = $request->capacidad;
+        $bebida->stock = $request->stock;   
+        $bebida->tipo = $request->tipo;
+        $bebida->marca = $request->marca;
+        $bebida->save();
+        return redirect("/")->with("bebidaEditada", true);
+    }
 }

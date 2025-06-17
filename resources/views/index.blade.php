@@ -26,9 +26,13 @@
             <strong>Bebida eliminada correctamente</strong>
         @endif
 
+        @if (session("bebidaEditada"))
+            <strong>Bebida editada correctamente</strong>
+        @endif
+
         @foreach ($bebidas as $bebida)
             <div>
-                {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <a href="/eliminar/{{ $bebida->id }}">Eliminar</a> <br>
+                {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <a href="/eliminar/{{ $bebida->id }}">Eliminar</a> <a href="/editar/{{ $bebida->id }}">Editar</a> <br>
             </div>
         @endforeach
     </body>
