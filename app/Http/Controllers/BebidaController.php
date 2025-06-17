@@ -23,5 +23,10 @@ class BebidaController extends Controller
         $bebida->save();
         return redirect("/")->with("bebidaAgregada", true);
     }
+
+    public function Detalle(Request $request, $id){
+        $bebida = Bebida::findOrFail($id); 
+        return view("detalle", ["bebida" => $bebida]);
+    }
    
 }

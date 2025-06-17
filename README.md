@@ -39,5 +39,6 @@ Estos son los pasos de código dados para crear este proyecto desde cero (para t
 * [Paso 1: Crear Modelo y Migraciones](tutorial/paso1.md)
 * [Paso 2: Crear controlador de Bebidas, y una vista para listar todas las bebidas](tutorial/paso2.md)
 * [Paso 3: Agregar alta de bebidas, en vista y controlador](tutorial/paso3.md)
+* [Paso 4: Agregar vista de detalles de bebida](tutorial/paso4.md)
 
 

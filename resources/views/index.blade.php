@@ -24,7 +24,7 @@
 
         @foreach ($bebidas as $bebida)
             <div>
-                {{ $bebida->nombre }} - {{ $bebida->stock }}  <br>
+                {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <br>
             </div>
         @endforeach
     </body>
