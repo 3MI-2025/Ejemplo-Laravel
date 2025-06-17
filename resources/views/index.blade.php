@@ -22,9 +22,13 @@
             <strong>Bebida agregada correctamente</strong>
         @endif
 
+        @if (session("bebidaEliminada"))
+            <strong>Bebida eliminada correctamente</strong>
+        @endif
+
         @foreach ($bebidas as $bebida)
             <div>
-                {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <br>
+                {{ $bebida->nombre }} - {{ $bebida->stock }} <a href="/bebida/{{ $bebida->id }}">Ver Detalles</a> <a href="/eliminar/{{ $bebida->id }}">Eliminar</a> <br>
             </div>
         @endforeach
     </body>

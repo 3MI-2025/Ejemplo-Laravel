@@ -29,4 +29,9 @@ class BebidaController extends Controller
         return view("detalle", ["bebida" => $bebida]);
     }
    
+    public function Eliminar(Request $request, $id){
+        $bebida = Bebida::findOrFail($id);
+        $bebida->delete();
+        return redirect("/")->with("bebidaEliminada", true);
+    }
 }
